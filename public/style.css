@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+}
+.loader img{
+  width: 30%;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    color: #232323;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    width: 80%;
+    height: 6em;
+    margin-bottom: 1em;
+  }
+h1{
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    margin: .5em;
+    height: 25em;
+    min-width: 30em;
+    max-width: 30em;
+    overflow: scroll;
+    overflow-y: scroll;
+    margin-bottom: -1em;
+}
+
+.list{
+    font-size: .7em;
+    margin-top: px;
+    margin-bottom: .5em;
+}
+
+
+.input{ 
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid ;
+    margin-block: .3em;
+    padding-left: 5px;
+  }
+
+  input:focus, select:focus{
+    outline: none;
+}
+
+/*------------Butones----------------*/
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+
+  .action{
+    display: none;
+    flex-direction: column;
+    flex-direction: center;
+  }
+  .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*--------------media querys-----------------*/
+
+  @media  screen and (max-width: 670px){
+    header{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+    }
+    h1{
+        font-size: 1.2em;
+        padding: 1em;
+    }
+    .list{
+      font-size: .7em;
+      border-width: 3px;
+    }
+    .action{
+        width: 75%;
+    }
+    .buttons{
+        margin-top: 1em;
+        justify-content: space-around;
+    }
+    .chat{
+        width: unset;
+        min-width: unset;
+        height: 60vh;
+    }
+  }

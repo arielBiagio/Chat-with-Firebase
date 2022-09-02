@@ -1,0 +1,18 @@
+{
+  "name": "parkchat",
+  "version": "1.0.0",
+  "description": "Chat realtime de Consultorios del Parque con Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "firebase",
+    "realtimedb"
+  ],
+  "author": "Ariel Biagio",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^9.9.3"
+  }
+}
