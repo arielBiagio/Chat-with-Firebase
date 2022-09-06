@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="estilos.css">
     <title>ParkChat alfa</title>
   </head>
   <body>
         <div class="loader" id="loader">
-        <img src="loader1.gif" alt="">
+        <img src="loader.gif" alt="">
         </div>
     
-    <header class=""> 
+    <header> 
       <h1 id="titulo" class="">Titulo</h1>
+      <nav>
+        <a href="#about">About</a>
+      </nav>
     </header>
       
       <div class="chatlist">
@@ -22,13 +23,13 @@
       </div>
       <br>
 
-    <div class="" id="action">
+    <div class="action" id="action">
         <label 
         for="inputNombre"
         id="name-label">Nombre 
         <input type="text" 
           id="inputNombre"
-          class="" 
+          class="input" 
           value=""
           readonly>
         </label>
@@ -38,14 +39,14 @@
         id="name-label">Mensaje 
         <input type="text" 
           id="inputMensaje"
-          class=""
+          class="input"
           placeholder=" ingresa tu mensaje..." 
           required>
         </label>
         
-        <div>
-        <button class="" type="submit" id="submit">Enviar</button>
-        <button  class="" id="cerrarSesion">Salir</button></div>
+        <div class="botones">
+        <button class="btn" type="submit" id="submit">Enviar</button>
+        <button  class="btn" id="cerrarSesion">Salir</button></div>
     </div>
     
     <div class="login" id="loginGoogle">
@@ -135,7 +136,7 @@
         const agregarMsg = (msg) => {
           let li = document.createElement('li')
           li.classList.add('list')
-          let txt = document.createTextNode(`${msg.autor}: ${msg.mensaje}`)
+          let txt = document.createTextNode(`${msg.autor}:  ${msg.mensaje}`)
           li.appendChild(txt)
           li.setAttribute('id', msg.fecha)
           chat.appendChild(li)

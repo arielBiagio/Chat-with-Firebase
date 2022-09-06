@@ -1,5 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-bg: #252735;
+    --color-font: #E3E3E5;
+    --color-bg-accent: #343648
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-font);
+    background: var(--color-bg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*-------------------------------Header----------------------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 4em;
+}
+
+header h1 {
+    font-weight: 700;
+    color: rgb(175, 192, 24);
+}
+header nav {
+    margin-right: 2em;
+}
+header nav a {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+header nav a:hover {
+    color:rgba(227, 227, 229, .7);
+}
+
+/*-------------------------------ChatList----------------------------------------*/
+
+.chatlist::before {
+    content: "";
+    position: absolute;
+    top: 8em;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--color-bg), transparent);
+  }
+
+.chatlist::-webkit-scrollbar {
+    display: none;
+}
+
+.chatlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+.chat {
+    max-width: 30em;
+
+}
+.list {
+    list-style: none;
+    line-height: 3em;
+}
+
+/*--------------------login------------------------------------*/
+.login{
+    display: flex;
+    justify-content: center;
+}
+#idImg{
+    width: 20%;
+}
+
+/*----------------------action---------------------------------*/
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.input {
+   padding: .5em;
+   margin: .5em 0;
+   border: 0;
+   background-color: var(--color-bg);
+   color: var(--color-font);
+   border-bottom: 1px solid var(--color-font);
+}
+
+.input:focus{
+    outline: none;
+}
+
+/*------------------botones--------------------*/
+
+.botones {
+    display: flex;
+    gap: 2em;
+}
+
+.btn {
+    margin-top: .5em;
+    padding: .4em 2em;
+    border-radius: 10px;
+    border: 0;
+    color: var(--color-font);
+    background: var(--color-bg-accent);
+    font-weight: 500;
 }
