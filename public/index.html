@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>ParkChat alfa</title>
   </head>
   <body>
@@ -15,22 +13,22 @@
         <img src="loader1.gif" alt="">
         </div>
     
-    <header class="nes-container"> 
-      <h1 id="titulo" class="title">Titulo</h1>
+    <header class=""> 
+      <h1 id="titulo" class="">Titulo</h1>
     </header>
       
-      <div class="nes-container">
+      <div class="chatlist">
         <ul class="chat" id="chat"></ul>
       </div>
       <br>
 
-    <div class="nes-field action" id="action">
+    <div class="" id="action">
         <label 
         for="inputNombre"
         id="name-label">Nombre 
         <input type="text" 
           id="inputNombre"
-          class="nes-input" 
+          class="" 
           value=""
           readonly>
         </label>
@@ -40,19 +38,19 @@
         id="name-label">Mensaje 
         <input type="text" 
           id="inputMensaje"
-          class="nes-input"
+          class=""
           placeholder=" ingresa tu mensaje..." 
           required>
         </label>
         
         <div>
-        <button class="nes-btn is-primary" type="submit" id="submit">Enviar</button>
-        <button  class="nes-btn is-error" id="cerrarSesion">Salir</button></div>
+        <button class="" type="submit" id="submit">Enviar</button>
+        <button  class="" id="cerrarSesion">Salir</button></div>
     </div>
     
     <div class="login" id="loginGoogle">
-      <!-- <img id="idImg" src="google.png" alt=""> -->
-      <i id="idImg" class="nes-icon google is-large"></i>
+      <img id="idImg" src="google.png" alt="">
+     
     </div>
    
 
@@ -136,7 +134,7 @@
 
         const agregarMsg = (msg) => {
           let li = document.createElement('li')
-          li.classList.add('list', 'nes-balloon')
+          li.classList.add('list')
           let txt = document.createTextNode(`${msg.autor}: ${msg.mensaje}`)
           li.appendChild(txt)
           li.setAttribute('id', msg.fecha)
