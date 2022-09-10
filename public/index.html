@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="/site.webmanifest">   -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="manifest" href="/site.webmanifest">  
     <link rel="stylesheet" href="estilos.css">
     <script src="https://kit.fontawesome.com/2eb918a29f.js" crossorigin="anonymous"></script>
     <title>ParkChat alfa</title>
@@ -117,8 +117,7 @@
       //Querys
       const queryMSG = query(refMensaje, orderByChild('fecha/'))
 
-      let titulo = document.getElementById('titulo')
-      let descripcion = document.getElementById('descripcion')
+  
       let loader = document.getElementById('loader')
       let chat = document.getElementById('chat')
       let inputNombre = document.getElementById('inputNombre')
@@ -134,9 +133,6 @@
 
       onValue(refText, (snap)=>{
           let data = snap.val() //con metodos realtime lo hago con let no const, auque funciona igual
-          //console.log('onValue', data)
-          //titulo.innerHTML = data.titulo
-          descripcion.innerHTML = data.descripcion
           loader.style.display = 'none'
         })
 
