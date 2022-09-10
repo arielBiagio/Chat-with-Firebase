@@ -19,6 +19,25 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*-------------------------------loader-----------------------------------------*/
+.loader{
+    background-color: #252735;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+}
+
+.loader img {
+    width: 10%;
+}
+
+
 /*-------------------------------Header----------------------------------------*/
 header {
     width: 100%;
@@ -31,7 +50,7 @@ header {
 
 header h1 {
     font-weight: 700;
-    color: rgb(175, 192, 24);
+    
 }
 header nav {
     margin-right: 2em;
@@ -85,8 +104,12 @@ header nav a:hover {
 }
 #idImg{
     width: 20%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
-
+#idImg:hover {
+    transform: scale(1.05);
+}
 /*----------------------action---------------------------------*/
 
 .action {
@@ -108,7 +131,9 @@ header nav a:hover {
 .input:focus{
     outline: none;
 }
-
+label{
+    font-size: .8em;
+}
 /*------------------botones--------------------*/
 
 .botones {
