@@ -16,7 +16,7 @@
         </div>
     
     <header> 
-      <h1 id="titulo" class="">Titulo</h1>
+      <h1 id="titulo" class="">ParkChat 1.0</h1>
       <nav>
         <button type="button" class="open-modal" data-open="modal1"><a href="#">About</a></button>
       </nav>
@@ -135,7 +135,7 @@
       onValue(refText, (snap)=>{
           let data = snap.val() //con metodos realtime lo hago con let no const, auque funciona igual
           //console.log('onValue', data)
-          titulo.innerHTML = data.titulo
+          //titulo.innerHTML = data.titulo
           descripcion.innerHTML = data.descripcion
           loader.style.display = 'none'
         })
