@@ -25,7 +25,7 @@ body {
 /*-------------------------------loader-----------------------------------------*/
 .loader{
     background-color: #252735;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     justify-content: center;
