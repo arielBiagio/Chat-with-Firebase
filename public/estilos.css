@@ -59,6 +59,7 @@ header nav {
     margin-right: 2em;
 }
 header nav a {
+    font-weight: 600;
     text-decoration: none;
     color: var(--color-font);
 }
@@ -160,6 +161,11 @@ label{
     border: none;
     background: transparent;
     cursor: pointer;
+    color: var(--color-font);
+  }
+  .close-modal {
+    color: var(--color-bg);
+    font-size: 1em;
   }
 
   .modal { 
@@ -222,3 +228,26 @@ label{
     visibility: visible;
     opacity: 1;
   }
+
+  /*----------------media queries-----------------*/
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 1em;
+        padding: .5em;
+    }
+
+    .chatlist {
+        height: 35vh;
+    }
+    .chatlist::before{
+        top: 7em;
+    }
+    .chat {
+        max-width: 17em;
+    }
+
+    .list {
+        line-height: 2.5em;
+    }
+}
